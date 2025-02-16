@@ -32,7 +32,7 @@ function App() {
       const formData = new FormData();
       formData.append('file', file);
   
-      const response = await fetch('http://ridiculous-brandy-samii-95e7a34e.koyeb.app/predict/', {
+      const response = await fetch('http://127.0.0.1:8000/predict/', {
         method: 'POST',
         body: formData,
         headers: {
